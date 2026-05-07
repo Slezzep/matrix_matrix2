@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1778193387 source:c:\users\user\documents\programacion\c++\matrix_matrix2\index.cpp
+	<iostream>
+	<vector>
+	"matrix.h"
+
+1778193342 c:\users\user\documents\programacion\c++\matrix_matrix2\matrix.h
+	<iostream>
+	<vector>
+	<initializer_list>
+
