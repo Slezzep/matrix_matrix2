@@ -118,16 +118,28 @@ int main(){
                    9, 4, 2};
 
 
+    //10 * 8 distribucion simetrica
+    Matrix2 test01 = {5, 0,
+                      0, 5};
 
-    Matrix2 result = Matrix2({1, 2, 3, 4}) * Matrix2({5, 6, 7, 8});
+    Matrix2 test02 = {4, 0,
+                      0, 4};
 
+    Matrix2 result = test01 * test02;
+    Matrix2 result2 = result; // * Matrix2({0, 1, 0, 0});
+
+
+    float sum = 0;
 
     for(size_t i = 0; i < 2; i++){
         for(size_t j = 0; j < 2; j++){
-            std::cout << result[i * 2 + j] << " ";
+            sum += result2[i * 2 + j];
+            std::cout << result2[i * 2 + j] << " ";
         }
         std::cout << std::endl;
     }
+
+    std::cout << "-----------------------\n\Resultado: " << sum;
 
     return 0;
 }

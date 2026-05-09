@@ -4,6 +4,8 @@
 #include <vector>
 #include <initializer_list>
 
+
+
 class Matrix4{
     public:
         Matrix4(std::initializer_list<float> list) : cols(4), rows(4) {
@@ -129,6 +131,10 @@ class Matrix2{
             }
             //std::cout << "Matriz (" << &matrix_result[0] << "," << &matrix_result << ") " << 4 << "x" << 4 << " calculada correctamente." << std::endl;
             return matrix_result;
+        }
+        float sumAll(){
+            float sum = 0;
+            return sum;
         }
     private:
          size_t cols, rows;
